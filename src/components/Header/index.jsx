@@ -7,9 +7,10 @@ import {
 } from 'react-icons/fa';
 
 import { useState } from 'react';
-import HeaderItem from '../HeaderItems';
+// import HeaderItem from '../NavItems';
 import useSize from '../hooks/UseSize';
 import Sidebar from '../SideBar';
+import NavItems from '../NavItems';
 
 export default function Header() {
   const windowSize = useSize();
@@ -25,10 +26,10 @@ export default function Header() {
 
       { windowSize ? (
         <nav className="flex w-1/2 justify-around">
-          <HeaderItem Icon={FaHome}>Inicio</HeaderItem>
-          <HeaderItem Icon={FaUserAlt}>Sobre</HeaderItem>
-          <HeaderItem Icon={FaIdCardAlt}>Projetos</HeaderItem>
-          <HeaderItem Icon={FaEnvelope}>Contatos</HeaderItem>
+          <NavItems Icon={FaHome}>Inicio</NavItems>
+          <NavItems Icon={FaUserAlt}>Sobre</NavItems>
+          <NavItems Icon={FaIdCardAlt}>Projetos</NavItems>
+          <NavItems Icon={FaEnvelope}>Contatos</NavItems>
         </nav>
       ) : (<FaBars size={25} onClick={renderSiderbar} />)}
     </header>
