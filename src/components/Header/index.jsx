@@ -7,13 +7,13 @@ import {
 } from 'react-icons/fa';
 
 import { useState } from 'react';
-// import HeaderItem from '../NavItems';
-import useSize from '../hooks/UseSize';
+import useSize from '../hooks/useSize';
 import Sidebar from '../SideBar';
 import NavItems from '../NavItems';
 
 export default function Header() {
   const windowSize = useSize();
+
   const [sidebar, setSidebar] = useState(false);
 
   const renderSiderbar = () => setSidebar(!sidebar);
