@@ -14,7 +14,7 @@ export default function Home() {
           <img src={hand} alt="hand" className="w-14 h-min ml-3 mt-10" />
         </h1>
         <p>
-          Olá, sou Arlisson Nascimetno. Um desenvolvedor apaixonado por codigo.📍
+          Olá, sou Arlisson Nascimento. Um desenvolvedor apaixonado por codigo.📍
           <span className="flex mt-2 sm:mt-4 space-x-2">
             <a href={gitHub} aria-label="link github" target="_blank" rel="noreferrer"><AiFillGithub className="text-2xl hover:text-blue-500" /></a>
             <a href={linkdin} aria-label="link github" target="_blank" rel="noreferrer"><AiFillLinkedin className="text-2xl hover:text-blue-500" /></a>
