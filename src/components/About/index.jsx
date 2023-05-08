@@ -1,4 +1,4 @@
-import developer from '../images/perfil/developer.png';
+import developer from '../../images/perfil/developer.png';
 
 export default function About() {
   return (

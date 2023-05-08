@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import hand from '../images/hand.png';
+import hand from '../../images/hand.png';
 import './style.css';
 
 const linkdin = 'https://www.linkedin.com/skill-assessments/Desenvolvimento%20de%20front-end/quiz-intro/';
@@ -7,7 +7,7 @@ const gitHub = 'https://github.com/arlisson314';
 
 export default function Home() {
   return (
-    <div id="Inicio" className="flex flex-col-reverse w-full h-[calc(100vh_-_64px)] items-center mt-20 space-x-4 sm:flex-row sm:justify-center">
+    <div id="Inicio" className="flex flex-col-reverse w-full h-[calc(100vh_-_64px)] items-center mt-20 space-x-4 sm:flex-row sm:justify-center sm:mt-0">
       <main className="w-full px-4 h-2/3 flex flex-col justify-center items-center space-y-10 sm:w-3/6">
         <h1 className="flex text-5xl justify-center items-center w-min font-bold">
           FullStack Developer
