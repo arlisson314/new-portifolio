@@ -7,12 +7,12 @@ import {
 } from 'react-icons/fa';
 
 import { useState } from 'react';
-import useSize from '../hooks/useSize';
+import useWindowSize from '../hooks/useWindowSize';
 import Sidebar from '../SideBar';
 import NavItems from '../NavItems';
 
 export default function Header() {
-  const windowSize = useSize();
+  const windowSize = useWindowSize();
 
   const [sidebar, setSidebar] = useState(false);
 
