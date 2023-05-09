@@ -2,12 +2,13 @@ import projectList from '../../MockProjects/index';
 
 export default function Projects() {
   return (
-    <div id="Projetos" className="w-full h-[calc(100vh_-_64px)] mt-20 flex flex-col items-ceter sm:flex-row sm:items-center sm:justify-center sm:space-x-4 sm:mt-0">
-      <main className="border border-gray-700 w-fullm mx-4 h-auto">
+    <div id="Projetos" className="w-full h-[calc(100vh_-_64px)] mt-20">
+
+      <main className="w-full h-auto space-y-4 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:space-y-0 sm:gap-y-4 pt-20">
         {projectList.map(({
-          name, imagem, descricao, tecnologias, previa, repostirio,
+          id, name, imagem, descricao, tecnologias, previa, repostirio,
         }) => (
-          <div key={name} className="flex justify-center flex-col">
+          <div key={id} className="flex justify-center items-center mx-auto flex-col border border-gray-700 w-[320px] h-auto">
             <img src={imagem} alt="thumb projeto" className="w-full h-40" />
             <div className="mx-4">
               <h4 className="text-center text-blue-400 font-semibold">{name}</h4>
@@ -24,6 +25,7 @@ export default function Projects() {
             </span>
           </div>
         ))}
+
       </main>
     </div>
   );
