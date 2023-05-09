@@ -7,7 +7,7 @@ export default function NavItems({ Icon, children, renderSiderbar }) {
       to={children}
       spy
       smooth
-      offset={0}
+      offset={-100}
       duration={500}
       onClick={renderSiderbar && renderSiderbar}
       className="flex justify-center items-center space-x-1 cursor-pointer text-lg hover:text-blue-400"
