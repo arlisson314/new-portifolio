@@ -8,8 +8,8 @@ export default function Projects() {
         {projectList.map(({
           id, name, imagem, descricao, tecnologias, previa, repostirio,
         }) => (
-          <div key={id} className="flex justify-center items-center mx-auto flex-col border border-gray-700 w-[320px] h-auto">
-            <img src={imagem} alt="thumb projeto" className="w-full h-40" />
+          <div key={id} className="flex justify-center items-center mx-auto flex-col w-[320px] h-auto sm:w-[340px]">
+            <img src={imagem} alt="thumb projeto" className="w-full h-60 rounded-lg" />
             <div className="mx-4">
               <h4 className="text-center text-blue-400 font-semibold">{name}</h4>
               <p>{descricao}</p>
