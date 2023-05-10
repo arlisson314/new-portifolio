@@ -1,10 +1,12 @@
+import { RxGithubLogo, RxExternalLink } from 'react-icons/rx';
 import projectList from '../../MockProjects/index';
 
 export default function Projects() {
   return (
-    <div id="Projetos" className="w-full h-[calc(100vh_-_64px)] mt-20">
-
-      <main className="w-full h-auto space-y-4 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:space-y-0 sm:gap-y-4 pt-20">
+    <div id="Projetos" className="w-full h-[calc(100vh_-_64px)] mt-20 flex flex-col items-center">
+      <h3 className="text-blue-500 font-semibold">Portifólio</h3>
+      <h2 className="font-semibold text-lg">Cada projeto é unico</h2>
+      <main className="w-full h-auto space-y-4 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:space-y-0 sm:gap-y-4 pt-10">
         {projectList.map(({
           id, name, imagem, descricao, tecnologias, previa, repostirio,
         }) => (
@@ -20,8 +22,16 @@ export default function Projects() {
               </span>
             </div>
             <span className="w-full h-10 flex justify-center space-x-2 my-4">
-              <a href={previa} aria-label="link github" target="_blank" rel="noreferrer" className="w-20 border h-8 rounded-md font-semibold text-gray-600 bg-blue-300 flex justify-center items-center">Previa</a>
-              <a href={repostirio} aria-label="link github" target="_blank" rel="noreferrer" className="w-24 border h-8 rounded-md font-semibold text-gray-600 bg-blue-300 flex justify-center items-center">Repostirio</a>
+              <a href={previa} aria-label="link github" target="_blank" rel="noreferrer" className="w-24 border h-8 rounded-md font-semibold text-gray-600 flex justify-evenly items-center hover:bg-blue-300 hover:text-black transition ease-in-out duration-500">
+                Previa
+                {' '}
+                <RxExternalLink size={20} />
+              </a>
+              <a href={repostirio} aria-label="link github" target="_blank" rel="noreferrer" className="w-24 border h-8 rounded-md font-semibold text-gray-600 flex justify-evenly items-center hover:bg-blue-300 hover:text-black transition ease-in-out duration-500">
+                Codigo
+                {' '}
+                <RxGithubLogo size={20} />
+              </a>
             </span>
           </div>
         ))}
