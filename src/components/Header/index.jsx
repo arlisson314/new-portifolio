@@ -19,7 +19,7 @@ export default function Header() {
   const renderSiderbar = () => setSidebar(!sidebar);
 
   return (
-    <header className="flex justify-between bg-white items-center h-16 px-4 shadow-md shadow-gray-200 z-10 w-full fixed top-0">
+    <header className="flex justify-between bg-gray-100 dark:bg-slate-950 dark:text-gray-200 items-center h-16 px-4 shadow-md z-10 w-full fixed top-0">
       {sidebar && <Sidebar renderSiderbar={renderSiderbar} />}
 
       <h3 className="text-2xl font-bold">Arlisson.dev</h3>
