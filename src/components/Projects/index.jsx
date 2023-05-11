@@ -3,10 +3,10 @@ import projectList from '../../MockProjects/index';
 
 export default function Projects() {
   return (
-    <div id="Projetos" className="w-full h-[calc(100vh_-_64px)] mt-20 flex flex-col items-center">
+    <div id="Projetos" className="w-full h-auto mt-20 flex flex-col items-center">
       <h3 className="text-blue-500 font-semibold">Portifólio</h3>
       <h2 className="font-semibold text-lg">Cada projeto é unico</h2>
-      <main className="w-full h-auto space-y-4 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:space-y-0 sm:gap-y-4 pt-10">
+      <main className="w-full space-y-4 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:space-y-0 sm:gap-y-4 pt-10">
         {projectList.map(({
           id, name, imagem, descricao, tecnologias, previa, repostirio,
         }) => (
