@@ -13,7 +13,7 @@ const projectList = [
   },
   {
     id: 2,
-    name: 'Pixe art',
+    name: 'Pixel art',
     imagem: pixeArt,
     descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, alias sed? Facere, magni eaque, placeat dignissimos assumenda officiis ab pariatur quaerat obcaecati deleniti exercitationem reiciendis porro sed corrupti saepe? Nostrum!',
     tecnologias: ['HTML5', 'CSS3', 'JavaScript'],
@@ -22,7 +22,7 @@ const projectList = [
   },
   {
     id: 3,
-    name: 'Pixe art',
+    name: 'Pixel art',
     imagem: pixeArt,
     descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, alias sed? Facere, magni eaque, placeat dignissimos assumenda officiis ab pariatur quaerat obcaecati deleniti exercitationem reiciendis porro sed corrupti saepe? Nostrum!',
     tecnologias: ['HTML5', 'CSS3', 'JavaScript'],
