@@ -17,8 +17,8 @@ export default function Home() {
         <p>
           Olá, sou Arlisson Nascimento. Um desenvolvedor apaixonado por codigo.📍
           <span className="flex mt-2 sm:mt-4 space-x-2">
-            <a href={gitHub} aria-label="link github" target="_blank" rel="noreferrer"><RxGithubLogo className="text-2xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
-            <a href={linkdin} aria-label="link github" target="_blank" rel="noreferrer"><RxLinkedinLogo className="text-2xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
+            <a href={gitHub} aria-label="link github" target="_blank" rel="noreferrer"><RxGithubLogo className="text-2xl text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" /></a>
+            <a href={linkdin} aria-label="link github" target="_blank" rel="noreferrer"><RxLinkedinLogo className="text-2xl text-gray-600 hover:text-blue-500 transition ease-in-out duration-500" /></a>
           </span>
         </p>
       </main>
