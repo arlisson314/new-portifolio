@@ -1,12 +1,14 @@
 import { RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx';
 
 import hand from '../../images/hand.png';
+import useBackground from '../hooks/useBackground';
 import './style.css';
 
-const linkdin = 'https://www.linkedin.com/skill-assessments/Desenvolvimento%20de%20front-end/quiz-intro/';
-const gitHub = 'https://github.com/arlisson314';
-
 export default function Home() {
+  const bgColor = useBackground();
+  const linkdin = 'https://www.linkedin.com/skill-assessments/Desenvolvimento%20de%20front-end/quiz-intro/';
+  const gitHub = 'https://github.com/arlisson314';
+
   return (
     <div id="Inicio" className="flex flex-col-reverse w-full h-[calc(100vh_-_64px)] items-center mt-16 pt-2 space-x-4 sm:flex-row sm:justify-center sm:mt-0">
       <main className="w-full px-4 h-2/3 flex flex-col justify-center items-center space-y-10 sm:w-3/6">
@@ -23,7 +25,7 @@ export default function Home() {
         </p>
       </main>
       <div className="w-4/6 h-2/3 flex justify-center items-center sm:w-2/6">
-        <div className="perfil dark:border-gray-600" />
+        <div className="perfil dark:border-gray-600" style={{ backgroundColor: bgColor }} />
       </div>
 
     </div>
