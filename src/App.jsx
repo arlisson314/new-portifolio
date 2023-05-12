@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="bg-gray-100 dark:bg-slate-900">
+    <div className="bg-gray-100 dark:bg-slate-900 duration-700">
       <Header />
       <Home />
       <About />
