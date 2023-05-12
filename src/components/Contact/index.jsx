@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="flex items-center justify-start w-52 space-x-2 lg:w-auto">
           <FaWhatsappSquare size={32} className="mt-2 text-green-400" />
           <div className="flex flex-col text-justify">
-            <span className="text-blue-600 font-semibold">waths app</span>
+            <span className="text-blue-600 font-semibold">whatsapp</span>
             <span className="text-gray-200">(98) 991236814</span>
           </div>
         </div>
