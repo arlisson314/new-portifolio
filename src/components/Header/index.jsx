@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaRegMoon,
   FaRegLightbulb,
+  FaStar,
 } from 'react-icons/fa';
 
 import { useState } from 'react';
@@ -27,9 +28,10 @@ export default function Header() {
       <h3 className="text-2xl font-bold">Arlisson.dev</h3>
 
       { windowSize ? (
-        <nav className="flex w-1/2 justify-around">
+        <nav className="flex w-2/3 justify-around">
           <NavItems Icon={FaHome}>Inicio</NavItems>
           <NavItems Icon={FaUserAlt}>Sobre</NavItems>
+          <NavItems Icon={FaStar}>Abilidades</NavItems>
           <NavItems Icon={FaIdCardAlt}>Projetos</NavItems>
           <NavItems Icon={FaEnvelope}>Contatos</NavItems>
           {theme === 'light' ? (
