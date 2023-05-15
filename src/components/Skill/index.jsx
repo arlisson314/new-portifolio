@@ -3,15 +3,15 @@ import { skillsMock, toolsMock, otherKnowledgeMock } from '../../MockProjects/te
 
 export default function Skill() {
   return (
-    <main className="w-full h-auto mt-20 flex flex-col text-center mx-auto justify-center items-center">
+    <main id="Abilidades" className="w-full h-auto lg:h-screen mt-20 sm:mt-0 flex flex-col text-center justify-center items-center">
       <h3 className="text-blue-500 font-semibold">Habilidades</h3>
       <h2 className="font-semibold text-lg text-slate-950 dark:text-gray-200 w-10/12 text-start sm:text-center">
         Algumas tecnologias que utilizo em meus projetos
       </h2>
-      <section className="w-full space-y-4 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:space-y-0 sm:gap-y-4 pt-5">
+      <section className=" w-full h-5/6 space-y-4 mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 lg:items-start sm:space-y-0 sm:gap-y-4 pt-5">
 
         <div className="flex justify-start flex-col gap-4">
-          <h3 className="text-blue-500 font-semibold">Ferramentas</h3>
+          <h3 className="text-gray-600 font-semibold">Ferramentas</h3>
           <div className="h-auto w-9/12 mx-auto flex flex-row flex-wrap justify-start gap-2">
             {toolsMock.map(({
               linkHref, textLength, textXPosition, name, width, shapeRenderingWidth,
@@ -30,7 +30,7 @@ export default function Skill() {
         </div>
 
         <div className="flex justify-start flex-col gap-4">
-          <h3 className="text-blue-500 font-semibold">Tecnologias</h3>
+          <h3 className="text-gray-600 font-semibold">Tecnologias</h3>
           <div className="h-auto w-9/12 mx-auto flex flex-row flex-wrap justify-start gap-2">
             {skillsMock.map(({
               linkHref, textLength, textXPosition, name, width, shapeRenderingWidth,
@@ -49,7 +49,7 @@ export default function Skill() {
         </div>
 
         <div className="flex justify-start flex-col gap-4">
-          <h3 className="text-blue-500 font-semibold">Outros Conhecimentos</h3>
+          <h3 className="text-gray-600 font-semibold">Outros Conhecimentos</h3>
           <div className="h-auto w-9/12 mx-auto flex flex-row flex-wrap justify-start gap-2">
             {otherKnowledgeMock.map(({
               linkHref, textLength, textXPosition, name, width, shapeRenderingWidth,
