@@ -19,7 +19,7 @@ export default function Sidebar({ renderSiderbar }) {
       <div className="w-full h-full flex flex-col space-y-12 mt-16 items-center">
         <NavItems Icon={FaHome} renderSiderbar={renderSiderbar}>Inicio</NavItems>
         <NavItems Icon={FaUserAlt} renderSiderbar={renderSiderbar}>Sobre</NavItems>
-        <NavItems Icon={FaStar} renderSiderbar={renderSiderbar}>Abilidades</NavItems>
+        <NavItems Icon={FaStar} renderSiderbar={renderSiderbar}>Habilidades</NavItems>
         <NavItems Icon={FaIdCardAlt} renderSiderbar={renderSiderbar}>Projetos</NavItems>
         <NavItems Icon={FaEnvelope} renderSiderbar={renderSiderbar}>Contatos</NavItems>
         {theme === 'light' ? (

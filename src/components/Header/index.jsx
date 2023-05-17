@@ -31,7 +31,7 @@ export default function Header() {
         <nav className="flex w-2/3 justify-around">
           <NavItems Icon={FaHome}>Inicio</NavItems>
           <NavItems Icon={FaUserAlt}>Sobre</NavItems>
-          <NavItems Icon={FaStar}>Abilidades</NavItems>
+          <NavItems Icon={FaStar}>Habilidades</NavItems>
           <NavItems Icon={FaIdCardAlt}>Projetos</NavItems>
           <NavItems Icon={FaEnvelope}>Contatos</NavItems>
           {theme === 'light' ? (

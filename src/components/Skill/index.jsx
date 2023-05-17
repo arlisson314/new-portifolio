@@ -3,7 +3,7 @@ import { skillsMock, toolsMock, otherKnowledgeMock } from '../../MockProjects/te
 
 export default function Skill() {
   return (
-    <main id="Abilidades" className="w-full h-auto lg:h-screen mt-20 sm:mt-0 flex flex-col text-center justify-center items-center">
+    <main id="Habilidades" className="w-full h-auto lg:h-screen mt-20 sm:mt-0 flex flex-col text-center justify-center items-center">
       <h3 className="text-blue-500 font-semibold">Habilidades</h3>
       <h2 className="font-semibold text-lg text-slate-950 dark:text-gray-200 w-10/12 text-start sm:text-center">
         Algumas tecnologias que utilizo em meus projetos
