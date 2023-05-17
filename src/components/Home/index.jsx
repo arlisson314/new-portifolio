@@ -1,13 +1,19 @@
-import { RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx';
+import { RxGithubLogo, RxLinkedinLogo, RxDownload } from 'react-icons/rx';
+import { saveAs } from 'file-saver';
 
 import hand from '../../images/hand.png';
 import useBackground from '../hooks/useBackground';
 import './style.css';
+import fileUrl from '../../images/curriculo.pdf';
 
 export default function Home() {
   const bgColor = useBackground();
   const linkdin = 'https://www.linkedin.com/skill-assessments/Desenvolvimento%20de%20front-end/quiz-intro/';
   const gitHub = 'https://github.com/arlisson314';
+
+  const handleDownload = () => {
+    saveAs(fileUrl, 'curriculo.pdf');
+  };
 
   return (
     <div id="Inicio" className="flex flex-col-reverse w-full h-auto sm:h-[calc(100vh_-_64px)] items-center mt-16 pt-2 space-x-4 sm:flex-row sm:justify-center sm:mt-0">
@@ -19,13 +25,21 @@ export default function Home() {
         <p className="text-slate-950 dark:text-gray-500">
           Olá, sou Arlisson Nascimento. Um desenvolvedor apaixonado por codigo.
           <br />
-          Bem-vindo ao meu portfólio! Aqui você encontrará alguns dos meus melhores projetos,
+          Bem-vindo(a) ao meu portfólio! Aqui você encontrará alguns dos meus melhores projetos,
           além de informações sobre minhas habilidades e tecnologias que utilizo.📍
-          <span className="flex mt-2 sm:mt-4 space-x-2">
-            <a href={gitHub} aria-label="link github" target="_blank" rel="noreferrer"><RxGithubLogo className="text-2xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
-            <a href={linkdin} aria-label="link github" target="_blank" rel="noreferrer"><RxLinkedinLogo className="text-2xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
-          </span>
         </p>
+        <div className="flex sm:mt-4 space-x-2 text-slate-950 dark:text-gray-500 items-center w-full">
+          <a href={gitHub} aria-label="link github" target="_blank" rel="noreferrer"><RxGithubLogo className="text-3xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
+          <a href={linkdin} aria-label="link github" target="_blank" rel="noreferrer"><RxLinkedinLogo className="text-3xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
+          <button
+            type="button"
+            onClick={handleDownload}
+            className="w-32 h-[27px] rounded-sm font-extrabold bg-slate-950 dark:bg-gray-500 text-gray-200 dark:text-slate-900 pt-1 flex justify-center items-center gap-2 hover:bg-blue-500 dark:hover:bg-blue-500 transition ease-in-out duration-500"
+          >
+            Curriculum
+            <RxDownload size={20} className="stroke-1" />
+          </button>
+        </div>
       </main>
       <div className="w-4/6 h-2/3 flex justify-center items-center sm:w-2/6">
         <div className="perfil dark:border-gray-500" style={{ backgroundColor: bgColor }} />
