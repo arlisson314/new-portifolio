@@ -1,5 +1,4 @@
 import { RxGithubLogo, RxLinkedinLogo, RxDownload } from 'react-icons/rx';
-import { saveAs } from 'file-saver';
 
 import hand from '../../images/hand.png';
 import useBackground from '../hooks/useBackground';
@@ -10,10 +9,6 @@ export default function Home() {
   const bgColor = useBackground();
   const linkdin = 'https://www.linkedin.com/skill-assessments/Desenvolvimento%20de%20front-end/quiz-intro/';
   const gitHub = 'https://github.com/arlisson314';
-
-  const handleDownload = () => {
-    saveAs(fileUrl, 'curriculo.pdf');
-  };
 
   return (
     <div id="Inicio" className="flex flex-col-reverse w-full h-screen items-center mt-16 pt-2 space-x-4 sm:flex-row sm:justify-center sm:mt-0">
@@ -31,14 +26,18 @@ export default function Home() {
         <div className="flex sm:mt-4 space-x-2 text-slate-950 dark:text-gray-500 items-center w-full">
           <a href={gitHub} aria-label="link github" target="_blank" rel="noreferrer"><RxGithubLogo className="text-3xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
           <a href={linkdin} aria-label="link github" target="_blank" rel="noreferrer"><RxLinkedinLogo className="text-3xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
-          <button
-            type="button"
-            onClick={handleDownload}
-            className="w-32 h-[27px] rounded-sm font-extrabold text-lg bg-slate-950 dark:bg-gray-500 text-gray-200 dark:text-slate-900 flex justify-center items-center gap-2 hover:bg-blue-500 dark:hover:bg-blue-500 transition ease-in-out duration-500"
+          <a
+            href={fileUrl}
+            download
+            className="w-32 h-[27px]
+            rounded-sm font-extrabold
+            text-lg bg-slate-950 dark:bg-gray-500 text-gray-200 dark:text-slate-900 flex
+            justify-center items-center
+             gap-2 hover:bg-blue-500 dark:hover:bg-blue-500 transition ease-in-out duration-500"
           >
             Curriculum
             <RxDownload size={20} className="stroke-1" />
-          </button>
+          </a>
         </div>
       </main>
       <div className="w-4/6 h-2/3 flex justify-center items-center sm:w-2/6">
