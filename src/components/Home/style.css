@@ -1,16 +1,17 @@
 .perfil {
+  background: url("../../images/perfil/perfil.png") no-repeat 50% / cover;
   -webkit-animation: morph 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   animation: morph 8s ease-in-out infinite;
-  background-image: url("../../images/perfil/perfil.png");
   transition: all 1s ease-in-out;
-  background-repeat: no-repeat;
   border: 3px solid #2d2e32;
-  background-position: 50%;
-  background-size: cover;
   position: relative;
   height: 19rem;
   width: 20rem;
+  /* background-image: url("../../images/perfil/perfil.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: 50%; */
+  /* background-size: cover; */
 }
 
 @keyframes morph {
