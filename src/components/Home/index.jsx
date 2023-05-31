@@ -14,7 +14,7 @@ export default function Home() {
     <div id="Inicio" className="flex flex-col-reverse w-full h-screen items-center mt-16 pt-2 space-x-4 sm:flex-row sm:justify-center sm:mt-0">
       <main className="w-full px-4 h-2/3 flex flex-col justify-center items-start space-y-5 sm:w-3/6">
         <h1 className="flex text-3xl justify-center w-auto lg:w-auto items-center font-bold text-slate-950 dark:text-gray-200 mt-2 gap-4">
-          Desenvolvedor FullStack
+          Desenvolvedor front-end
           <img src={hand} alt="hand" className="w-14 h-min animate-bye" />
         </h1>
         <p className="text-slate-950 dark:text-gray-500">
