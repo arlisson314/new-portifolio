@@ -41,11 +41,9 @@ export default function Home() {
         </div>
       </main>
       <div className="w-4/6 h-2/3 flex justify-center items-center sm:w-2/6">
-        <div className="perfil dark:border-gray-500" style={{ backgroundColor: bgColor }} />
+        <div className="perfil dark:border-gray-500 lg:h-[22rem]" style={{ backgroundColor: bgColor }} />
       </div>
 
     </div>
   );
 }
-
-// 460 640
