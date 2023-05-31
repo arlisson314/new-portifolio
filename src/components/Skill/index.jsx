@@ -9,63 +9,9 @@ export default function Skill() {
         Algumas tecnologias que utilizo em meus projetos
       </h2>
       <section className=" w-full h-5/6 space-y-4 mx-auto pt-5 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:space-y-0 sm:gap-y-4 lg:items-start lg:mt-10">
-
-        <div className="flex justify-start flex-col gap-4">
-          <h3 className="text-gray-600 font-semibold">Ferramentas</h3>
-          <div className="h-auto w-9/12 mx-auto flex flex-row flex-wrap justify-start gap-2">
-            {toolsMock.map(({
-              linkHref, textLength, textXPosition, name, width, shapeRenderingWidth,
-            }) => (
-              <SkillsItems
-                key={name}
-                linkHref={linkHref}
-                textLength={textLength}
-                textXPosition={textXPosition}
-                width={width}
-                name={name}
-                shapeRenderingWidth={shapeRenderingWidth}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="flex justify-start flex-col gap-4">
-          <h3 className="text-gray-600 font-semibold">Tecnologias</h3>
-          <div className="h-auto w-9/12 mx-auto flex flex-row flex-wrap justify-start gap-2">
-            {skillsMock.map(({
-              linkHref, textLength, textXPosition, name, width, shapeRenderingWidth,
-            }) => (
-              <SkillsItems
-                key={name}
-                linkHref={linkHref}
-                textLength={textLength}
-                textXPosition={textXPosition}
-                width={width}
-                name={name}
-                shapeRenderingWidth={shapeRenderingWidth}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="flex justify-start flex-col gap-4">
-          <h3 className="text-gray-600 font-semibold">Outros Conhecimentos</h3>
-          <div className="h-auto w-9/12 mx-auto flex flex-row flex-wrap justify-start gap-2">
-            {otherKnowledgeMock.map(({
-              linkHref, textLength, textXPosition, name, width, shapeRenderingWidth,
-            }) => (
-              <SkillsItems
-                key={name}
-                linkHref={linkHref}
-                textLength={textLength}
-                textXPosition={textXPosition}
-                width={width}
-                name={name}
-                shapeRenderingWidth={shapeRenderingWidth}
-              />
-            ))}
-          </div>
-        </div>
+        <SkillsItems list={toolsMock}>Ferramentas</SkillsItems>
+        <SkillsItems list={skillsMock}>Tecnologias</SkillsItems>
+        <SkillsItems list={otherKnowledgeMock}>Outros Conhecimentos</SkillsItems>
       </section>
     </main>
   );
