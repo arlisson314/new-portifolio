@@ -1,5 +1,6 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import Home from '../components/Home';
+import cvMock from './cvMock';
 
 describe('Home component', () => {
   test('renders the title', () => {
@@ -14,10 +15,16 @@ describe('Home component', () => {
     expect(subtitle).toBeVisible();
   });
 
-  test('renders the download button', () => {
+  test('renders the download button and clicking the button opens the CV in a new tab', () => {
     render(<Home />);
     const downloadButton = screen.getByText('Curriculum');
+    window.open = jest.fn(); // Mock da função window.open
+
+    fireEvent.click(downloadButton);
+
     expect(downloadButton).toBeVisible();
+    expect(window.open).toHaveBeenCalledTimes(1);
+    expect(window.open).toHaveBeenCalledWith(cvMock, '_blank');
   });
 
   test('renders the GitHub logo', () => {
