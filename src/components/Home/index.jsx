@@ -1,8 +1,8 @@
-import { RxGithubLogo, RxLinkedinLogo, RxDownload } from 'react-icons/rx';
+import { RxDownload, RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx';
 
 import hand from '../../images/hand.png';
 import useBackground from '../hooks/useBackground';
-import fileUrl from '../../images/curriculo.pdf';
+import cv from '../../images/curriculo.pdf';
 import './style.css';
 
 export default function Home() {
@@ -24,20 +24,20 @@ export default function Home() {
           além de informações sobre minhas habilidades e tecnologias que utilizo.📍
         </p>
         <div className="flex sm:mt-4 space-x-2 text-slate-950 dark:text-gray-500 items-center w-full">
-          <a href={gitHub} aria-label="link github" target="_blank" rel="noreferrer"><RxGithubLogo className="text-3xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
-          <a href={linkdin} aria-label="link github" target="_blank" rel="noreferrer"><RxLinkedinLogo className="text-3xl hover:text-blue-500 transition ease-in-out duration-500" /></a>
-          <a
-            href={fileUrl}
-            download
-            className="w-32 h-[27px]
-            rounded-sm font-extrabold
-            text-lg bg-slate-950 dark:bg-gray-500 text-gray-200 dark:text-slate-900 flex
-            justify-center items-center
-             gap-2 hover:bg-blue-500 dark:hover:bg-blue-500 transition ease-in-out duration-500"
+          <a href={gitHub} aria-label="link github" target="_blank" rel="noreferrer">
+            <RxGithubLogo className="text-3xl hover:text-blue-500 transition ease-in-out duration-500" />
+          </a>
+          <a href={linkdin} aria-label="link linkdin" target="_blank" rel="noreferrer">
+            <RxLinkedinLogo className="text-3xl hover:text-blue-500 transition ease-in-out duration-500" />
+          </a>
+          <button
+            type="button"
+            onClick={() => window.open(cv, '_blank')}
+            className="w-32 h-[27px] rounded-sm font-extrabold text-lgbg-slate-950 dark:bg-gray-500 text-gray-200 dark:text-slate-900 flex justify-center items-center gap-2 hover:bg-blue-500 dark:hover:bg-blue-500 transition ease-in-out duration-500"
           >
             Curriculum
             <RxDownload size={20} className="stroke-1" />
-          </a>
+          </button>
         </div>
       </main>
       <div className="w-4/6 h-2/3 flex justify-center items-center sm:w-2/6">
