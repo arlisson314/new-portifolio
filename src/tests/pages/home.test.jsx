@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import Home from '../pages/Home';
-import cvMock from './cvMock';
+import Home from '../../pages/Home';
+import cvMock from '../cvMock';
 
 describe('Home component', () => {
   test('renders the title', () => {
