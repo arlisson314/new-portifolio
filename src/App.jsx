@@ -2,7 +2,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Skill from './components/Skill';
 
