@@ -1,4 +1,4 @@
-import SkillsItems from '../SkillsItems';
+import SkillsItems from '../../components/SkillsItems';
 import { skillsMock, toolsMock, otherKnowledgeMock } from '../../MockProjects/tecnologias';
 
 export default function Skill() {

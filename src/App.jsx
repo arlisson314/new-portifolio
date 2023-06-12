@@ -4,7 +4,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
-import Skill from './components/Skill';
+import Skill from './pages/Skill';
 
 function App() {
   return (
