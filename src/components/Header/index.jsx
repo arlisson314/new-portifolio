@@ -10,10 +10,10 @@ import {
 } from 'react-icons/fa';
 
 import { useState } from 'react';
-import useWindowSize from '../hooks/useWindowSize';
+import useWindowSize from '../../hooks/useWindowSize';
 import Sidebar from '../SideBar';
 import NavItems from '../NavItems';
-import { useTheme } from '../hooks/useTheme';
+import { useTheme } from '../../hooks/useTheme';
 
 export default function Header() {
   const windowSize = useWindowSize();

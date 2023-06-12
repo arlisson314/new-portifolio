@@ -9,7 +9,7 @@ import {
   FaStar,
 } from 'react-icons/fa';
 import NavItems from '../NavItems';
-import { useTheme } from '../hooks/useTheme';
+import { useTheme } from '../../hooks/useTheme';
 
 export default function Sidebar({ renderSiderbar }) {
   const { theme, setTheme } = useTheme();

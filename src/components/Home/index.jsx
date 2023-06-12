@@ -1,7 +1,7 @@
 import { RxDownload, RxGithubLogo, RxLinkedinLogo } from 'react-icons/rx';
 
 import hand from '../../images/hand.png';
-import useBackground from '../hooks/useBackground';
+import useBackground from '../../hooks/useBackground';
 import cv from '../../images/curriculo.pdf';
 import './style.css';
 
@@ -33,7 +33,7 @@ export default function Home() {
           <button
             type="button"
             onClick={() => window.open(cv, '_blank')}
-            className="w-32 h-[27px] rounded-sm font-extrabold text-lgbg-slate-950 dark:bg-gray-500 text-gray-200 dark:text-slate-900 flex justify-center items-center gap-2 hover:bg-blue-500 dark:hover:bg-blue-500 transition ease-in-out duration-500"
+            className="w-32 h-[27px] rounded-sm flex justify-center items-center gap-2 font-extrabold text-lg bg-slate-950 dark:bg-gray-500 text-gray-200 dark:text-slate-900 hover:bg-blue-500 dark:hover:bg-blue-500 transition ease-in-out duration-500"
           >
             Curriculum
             <RxDownload size={20} className="stroke-1" />
